@@ -1,11 +1,12 @@
  \documentclass{article}
  \usepackage{amsmath}
  \usepackage{graphicx}
- \usepackage{subcaption} %Ransomware be careful
-
+ \usepackage{subcaption}
+ \usepackage{longtable}
+\newcommand{\thema}{Die drei grundlegenden Sprachen einer Webseite}
 \title{
 	Beruf- und Arbeitspädagoge\\
-	Die drei grundlegenden Sprachen einer Webseite
+	 \thema
 	\newline
 	\begin{figure}[h!]
 		\vspace{15mm}
@@ -36,14 +37,41 @@
     \tableofcontents % Inhaltsangabe
     \newpage
 
-    \section{Section}
-        Hello World
+	\section{Einleitung}
+	Konzept zur Darstellung einer Ausbildungssituationim Rahmen der Ausbildereignungsprüfung
+	\subsection{Thema}
+	\thema
 
-    \subsection{Subsection}
-        Structuring a document is easy!
+    \subsection{Methodik}
+        Gewählte Methodik: Präsentation
+     
+    \subsection{Ziel der Ausbildungssituation(operationalisiert)}     
+        Nach der Präsentation kennt der Auszubildende die Basics der drei grundlegenden Sprachen einer Webseite. Den Aufbau, die Positionierung und Validierung.
+        
+    \subsection{Ausbildungsberuf}
+    Fachinformatiker und zur Fachinformatiker
+    
+    \subsection{Einordnung in den Ausbildungsrahmenplan}
+    §5 Abs. 1 Nr. 1 der Verordnung über die Berufsausbildung  Fachinformatiker und zur Fachinformatikerin für technische Systeme
+    
+        
+\newpage        
+    \section{Glossar}
+    %\textwidth
+   \begin{table}[h!]
+   \begin{center}
+   	\caption{Multirow table.}
+   	\label{tab:table1}
+   	\begin{tabular}{|l|p{10cm}|}
+   		\textbf{Fremdwort} & \textbf{Erklärung}\\
+   		\hline
+   		operationalisiert &[1] theoretische Begriffe und Hypothesen im Sinn ihrer empirischen Überprüfbarkeit umformulieren, so dass im Einzelnen überprüfbare Zielvorgaben und Schritte vorliegen\\
+   	\end{tabular}
+   \end{center}
+\end{table}
 
-    \subsubsection{Subsubsection}
-        More text
+
+\newpage
 
     \paragraph{Paragraph}
         Some more text
