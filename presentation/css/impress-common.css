@@ -5,6 +5,19 @@ This file contains sample CSS that you may want to use in your presentation.
 It is focused on plugin functionality, not the visual style of your presentation. */
 
 /* Using the substep plugin, hide bullet points at first, then show them one by one. */
+
+@font-face {
+    font-family: AlegreyaSansSC;
+    src: url(./../../fonts/Alegreya_Sans_SC/AlegreyaSansSC-Regular.ttf);
+    font-weight: 500;
+  }
+
+* {
+    font-family: AlegreyaSansSC;
+    margin: 0;
+    padding: 0;
+}
+
 #impress .step .substep {
     opacity: 0;
 }
@@ -86,7 +99,7 @@ It is focused on plugin functionality, not the visual style of your presentation
     padding: 1em;
     text-align: center;
     z-index: 100;
-    font-family: Verdana, Arial, Sans;
+    font-family: AlegreyaSansSC;
 }
 .impress-enabled #impress-help td {
     padding-left: 1em;
