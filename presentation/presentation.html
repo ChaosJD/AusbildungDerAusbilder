@@ -3,23 +3,58 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="author" content="Josef Sebastian Duschl" />
 <title>The Big 3</title>
 <link rel="shortcut icon" href="../pics/svg/codeFreepikFlaticon.svg" />
 <!-- Icon was made by Freepik from www.flaticon.com -->
 
 <!-- css -->
 <link href="./css/impress-common.css" rel="stylesheet" />
-
+<link href="./css/impress-demo.css" rel="stylesheet" />
 
 </head>
+<!-- error message-->
+<body class="impress-not-supported">
+
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+    </div>
+
+    <!-- config over the area -->
+    <div id="impress"
+    data-transition-duration="1000"
+    data-width="1024"
+    data-height="768"
+    data-max-scale="3"
+    data-min-scale="0"
+    data-perspective="1000"
+    data-autoplay="0"> <!-- hint here ends the config-->
+    
+
+    <!--here starts the slides-->
+
+    <div id="bored" class="step slide" data-x="-1000" data-y="-1500" data-autoplay="10">
+        <p>The quick brown fox jumps over the lazy dog.</p>
+        <q>Aren’t you just <b>bored</b> with all those slides-based presentations?</q>
+        <h1> Test</h1>
+    </div>
+    <div id = >
+
+    </div>
+</body>
+
+
 <body>
+
 
 <h1>This is a Heading</h1>
 <p>This is a paragraph.</p>
 
 <!-- script -->
-<script type="text/javascript" src="./extras/markdown/markdown.js"></script>
-<script src="js/impress.js"></script>
+<script type="text/javascript" src="./extra/markdown/markdown.js"></script>
+<script src='./js/impress.js'></script>
 <script>impress().init();</script>
 </body>
 </html> 
