@@ -87,7 +87,8 @@ It is focused on plugin functionality, not the visual style of your presentation
   opacity: 0.6;
 }
 .impress-enabled #impress-help {
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+    /*background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);*/
+    backg: url(../../pics/gif/DinoHtmlCssJavaScript.gif);
     color: #EEEEEE;
     font-size: 80%;
     position: fixed;
