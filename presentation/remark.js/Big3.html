@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Big3</title>
+  <meta charset="utf-8">
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+    @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+    @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+    body {
+      font-family: 'Droid Serif';
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: 'Yanone Kaffeesatz';
+      font-weight: 500;
+      font-size: 5%;
+      font-kerning: auto;
+    }
+
+    .remark-code,
+    .remark-inline-code {
+      font-family: 'Ubuntu Mono';
+    }
+  </style>
+</head>
+
+<body>
+  <textarea id="source">
+
+class: center, middle
+
+Willkommen zur Präsentation
+# Die drei grundlegenden Sprachen einer Webseite
+![:scale 80%](../../pics/htmlCssJsWordwordle.png)
+
+---
+
+# Agenda
+
+1. Was sind die Big3
+1. Wie sieht die aktuelle Situation aus
+1. Ausschnitt aus der Pr asentation4
+1. Ausblick
+1. Validatoren
+!. Wer hats erfunden?
+https://caniuse.com/
+---
+
+# Was sind die Big3
+
+.center[
+  ![Dino](./../../pics/gif/DinoHtmlCssJavaScript.gif)
+]
+
+---
+
+# HTML
+* textbasierte Auszeichnungssprache zur Strukturierung elektronischer Dokumente
+* Grundlage des World Wide Web
+* Von Webbrowsern dargestellt
+* Metainformationen: Sprache, Autor
+* Text semantisch zu strukturieren
+
+## Weiterentwicklung
+* World Wide Web Consortium, W3C
+* Web Hypertext Application Technology Working Group, WHATWG
+
+## Wer hat's erfunden?
+*  Europäischen Organisation für Kernforschung, CERN
+
+---
+
+# Erste Webseite
+![:scale 130%, FirstWebsite](./../../pics/cernFirstWebsite.png)
+
+---
+
+# Das steckt dahinter
+````HTML
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html> 
+```
+
+# Das ist ein HTML Element
+```HTML
+<tagname>Content goes here...</tagname> 
+```
+
+---
+
+
+
+    </textarea>
+  <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+  </script>
+  <script>
+    remark.macros.scale = function (percentage) {
+      var url = this;
+      return '<img src="' + url + '" style="width: ' + percentage + '" />';
+    };
+
+    var slideshow = remark.create();
+  </script>
+</body>
+
+</html>
+
+<!-- 
+    
+
+-->
