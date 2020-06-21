@@ -189,6 +189,8 @@ Selektor1 [, Selektor2 [, …] ] {
 
 
 ---
+name: burn
+
 # Aufbau
 ```javascript
 //Beispiel JavaScript
@@ -231,8 +233,21 @@ window.onload = halloWelt;
       var url = this;
       return '<img src="' + url + '" style="width: ' + percentage + '" />';
     };
-
+    
     var slideshow = remark.create();
+
+    slideshow.on('afterHideSlide', function(slide){
+      if(slide.properties.name == 'burn'){
+        alert('Burn in Hello');
+      }
+     
+    });
+    
+    // every 8 seconds (change to your desired interval), fire the helper function
+setInterval(function () {carousel(slideshow)}, 8000);
+
+
+    slideshow
   </script>
 </body>
 
@@ -241,4 +256,4 @@ window.onload = halloWelt;
 <!-- 
     
 
--->
+-->;
