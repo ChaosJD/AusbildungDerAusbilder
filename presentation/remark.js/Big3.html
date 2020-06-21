@@ -4,6 +4,7 @@
 <head>
   <title>Big3</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="./css/abs-layout.css" />
   <style>
     @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
     @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
@@ -26,7 +27,9 @@
     .remark-inline-code {
       font-family: 'Ubuntu Mono';
     }
+
   </style>
+
 </head>
 
 <body>
@@ -59,8 +62,8 @@ https://caniuse.com/
 
 ---
 
-# HTML
-* textbasierte Auszeichnungssprache zur Strukturierung elektronischer Dokumente
+# Hypertext Markup Language - HTML
+* Textbasierte Auszeichnungssprache zur Strukturierung elektronischer Dokumente
 * Grundlage des World Wide Web
 * Von Webbrowsern dargestellt
 * Metainformationen: Sprache, Autor
@@ -71,17 +74,17 @@ https://caniuse.com/
 * Web Hypertext Application Technology Working Group, WHATWG
 
 ## Wer hat's erfunden?
-*  Europäischen Organisation für Kernforschung, CERN
+*  Europäischen Organisation für Kernforschung, CERN, 1989
 
 ---
 
 # Erste Webseite
-![:scale 130%, FirstWebsite](./../../pics/cernFirstWebsite.png)
+![:scale 125%, FirstWebsite](./../../pics/cernFirstWebsite.png)
 
 ---
 
-# Das steckt dahinter
-````HTML
+# Allgemeiner Aufbau
+````html
 
 <!DOCTYPE html>
 <html>
@@ -97,13 +100,127 @@ https://caniuse.com/
 </html> 
 ```
 
-# Das ist ein HTML Element
+# Tag Aufbau
 ```HTML
 <tagname>Content goes here...</tagname> 
 ```
 
 ---
 
+# Cascading Style Sheets - CSS
+*  Stylesheet-Sprache für elektronische Dokumente
+*  living standard
+*  Erstellung von Gestaltungsanweisungen
+
+## Weiterentwicklung
+* World Wide Web Consortium - W3C
+
+## Wer hat's erfunden?
+* CERN - Håkon Wium Lie 1996, [the proposal](https://www.w3.org/People/howcome/p/cascade.html)
+
+---
+
+.abs-layout.width-300.left[
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+</style>
+</head>
+<body>
+
+<h1>My First CSS Example</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+```
+]
+
+.abs-layout.left-50[
+  ![:scale 95%, cssExampleResult](./../../pics/cssExampleResult.png)
+]
+
+---
+# Aufbau
+```css
+Selektor1 [, Selektor2 [, …] ] {
+  Eigenschaft-1: Wert-1;
+  …
+  Eigenschaft-n: Wert-n[;]
+}
+/* Kommentar */
+/* In eckigen Klammern stehen optionale Angaben */
+```
+
+---
+
+# JavaScript
+* Skriptprache
+* Benutzerinteraktionen auszuwerten
+* Inhalte zu verändern, nachzuladen oder zu generieren
+* Erweiterung von HTML & CSS
+* Um die Popularität von Java zu nutzen, wurde LiveScript in JavaScript umbenannt.
+* objektorientiert
+* prozedural
+* funktional
+
+####  ECMAScript - beschreibt den standardisierten Sprachkern von JavaScript
+ * eine dynamisch typisierte,
+ * objektorientierte,
+ * aber **klassenlose** Skriptsprache.
+
+# Wer hat's erfunden?
+* Netscape & Sun Microsystems -> Oracle, 1996 
+
+
+---
+# Aufbau
+```javascript
+//Beispiel JavaScript
+function halloWelt() {
+	alert('Hello World');
+}
+window.onload = halloWelt;
+
+```
+ 
+---
+
+# Validatoren
+## HTML
+[w3c](https://validator.w3.org/)
+## CSS
+[w3c](https://jigsaw.w3.org/css-validator/)
+## Java Script
+[validatejavascript.com](https://validatejavascript.com/)
+
+---
+# Ausblick
+## JavaScript
+* Anwendung auf Servern und in Microcontrollern.
+* Office Anwendungen: Google Apps Script &Microsoft Excel
+* Präsentationstechnik [remark.js](https://remarkjs.com/#1)
+
+## HTML
+* Markdown
+
+## CSS
+* [syntactically awesome style sheets - sassy ](https://sass-lang.com/)
 
 
     </textarea>
