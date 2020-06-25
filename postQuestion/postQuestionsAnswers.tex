@@ -4,8 +4,26 @@
 }
 \usepackage{qrcode} % keine Umlaute verwende ä, ü, ö, 
 \usepackage{listings}
+\usepackage{tikz,pgfplots}
+
+\title{
+	Die drei grundlegenden Sprachen einer Webseite
+	\newline
+	Erfolgssicherung, Für die Dokumentation geeignet
+	\begin{figure}[h!]
+		\vspace{15mm}
+
+		\includegraphics[scale=0.5]{../pics/lightBulpWordart.png}\centering
+	\end{figure}
+	\vfill
+}
+\author{Josef Sebastian Duschl}
+\date{\today}
+
 
 \begin{document}
+	\maketitle
+	\newpage
 	\section{HTML}
 		\begin{itemize}
 			\item Was heißt HTML?
@@ -33,29 +51,25 @@
 					\choice yes
 					\choice no
 					\hfill\qrcode{yes\ }\vspace{2em}
-				\end{oneparcheckboxes}	
-		  	
-	
+				\end{oneparcheckboxes}
+
 			\item Was ist ein Webbrowser?
-			%\fillin[ Computerprogramme zur Darstellung von Webseiten] \hfill \qrcode{Computerprogramme zur Darstellung von Webseiten}\vspace{2em}
 			\Antwort{Ein\ Computerprogramm\ zur\ Darstellung\ einer\ Webseite}
 			
 			\item Welche zwei gängige Dokumentenarten lassen sich darstellen?\\
 			\fillin[pdf] \fillin[html] \hfill \qrcode{pdf, html}\vspace{2em}
 			
 			\item Welche Aufgabe hat HTML?
-			%\fillin[Text semantisch zu strukturieren] \hfill \qrcode{Text semantisch zu strukturieren}\vspace{2em}
 			\Antwort{Text\ semantisch\ zu\ Strukturieren}
 			
 			\item Welche Matainformationen fallen Ihnen ein?
-			%\fillin[Sprache] \fillin[Autor] \hfill \qrcode{Sprache, Autor}
+			\fillin[Sprache] \fillin[Autor] \hfill \qrcode{Sprache, Autor}
 			
 			\item Wer entwickelt HTML weiter?
 			\fillin[W3C] \fillin[WHATWG] \hfill \qrcode{W3C, WHATWG}
 			
 			\item Wer hat Sie erfunden?
-			%\fillin[Europäischen Organisation für Kernforschung, CERN] \hfill \qrcode{Europaeischen Organisation fuer Kernforschung}
-			\Antwort{Europaeischen\ Organisation\ fuer\ Kernforschung, CERN}
+			\Antwort{Europaeischen\ Organisation\ fuer\ Kernforschung,\ CERN}
 			
 			\item Wann wurde Sie erfunden?
 			\Antwort{1989}
@@ -103,30 +117,30 @@
 
 				\begin{lstlisting}
 <!DOCTYPE html>
-	<html>
-		<head>
-			<style>
-				body {
-					background-color: lightblue;
-				}
+<html>
+	<head>
+		<style>
+			body {
+				background-color: lightblue;
+			}
 
-				h1 {
-					color: white;
-					text-align: center;
-				}
+			h1 {
+				color: white;
+				text-align: center;
+			}
 
-				p {
-					font-family: verdana;
-					font-size: 20px;
-				}
-		</head>
-		<body>
+			p {
+				font-family: verdana;
+				font-size: 20px;
+			}
+	</head>
+	<body>
 
-			<h1>My First CSS Example</h1>
-			<p>This is a paragraph.</p>
+		<h1>My First CSS Example</h1>
+		<p>This is a paragraph.</p>
 
-		</body>
-	</html>
+	</body>
+</html>
 				\end{lstlisting}
 				\vfill
 \qrcode{https://www.w3schools.com/css/tryit.asp?filename=trycss_default}
@@ -145,17 +159,44 @@
 				\item Wieso nicht LiveScript?
 				\Antwort{Um die Popularitaet\ von\ Java\ zu\ nutzen}
 				
-				\item welche Besonderheiten weißt Javascript in der Sprach noch auf?\\
+				\item welche Besonderheiten weißt Javascript in der Sprache noch auf?\\
 				\Antwort{Sie\ ist\ objektorientiert,\ prozedural,\ funktional}
+				\item Was ist ECMAScript?
+				\Antwort{beschreibt\ den\ standardisierten\ Sprachkern\ von\ JavaScript}
+				\item Was heißt ECMA?
+				\Antwort{European\ Computer\ Manufacturers\ Association,\ Europaeischer\ Verband\ der\ Computerhersteller}
+				\item Für was steht ECMA?
+				\Antwort{dynamische\ typisierte,\ objektorienterte\ aber klassenlose\ Skripsprache}
 				
+				\item Wer hat Sie erfunden?
+				\Antwort{Netscape\ \&\ Sun\ Microsystmes\ -> Oracle}
 				
+				\item Wann wurde Sie erfunden?
+				\Antwort{1996}
 				
+				\item Mit welchem Tagnamen wird Javascript eingeleitet?
+				\Antwort{<script>}
+				
+				\item Finde den Fehler
 			\end{itemize}
-		\begin{checkboxes}
-			\choice test
-		\end{checkboxes}
-		
-		 
-		%\(12345 + 67890 = \) \fillin[80235] \hfill\qrcode{80235}\vspace{2em} \\
-		123456+789 =\fillin[123456] \hfill \qrcode{test}
+				\begin{lstlisting}
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function myFunction() {
+				document.getElementById().innerHTML 
+					= "Paragraph changed.";
+			}
+		</script>
+	</head>
+	<body>
+		<h2>JavaScript in Head</h2>
+		<p id="demo">A Paragraph.</p>
+		<button type="button" onclick="myFunction()">Try it</button>
+	</body>
+</html>
+				\end{lstlisting}
+				\vfill
+				\qrcode{https://www.w3schools.com/js/tryit.asp?filename=tryjs_whereto_head}
 \end{document}
